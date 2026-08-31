@@ -10,7 +10,8 @@ nav:
 theme:
   name: material
   language: fa
-  font: false
+  font:
+    text: Vazirmatn
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
