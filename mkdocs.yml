@@ -1,0 +1,39 @@
+site_name: ویکی‌فرار
+site_description: راهنمای آزادسازی مدرک
+site_url: https://jolmak.github.io/wikifarar/
+repo_url: https://github.com/jolmak/wikifarar
+edit_uri: edit/main/docs/
+
+nav:
+  - آزادسازی مدرک: index.md
+
+theme:
+  name: material
+  language: fa
+  font: false
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: حالت تاریک
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: حالت روشن
+  features:
+    - navigation.top
+    - search.highlight
+    - toc.follow
+
+markdown_extensions:
+  - toc:
+      permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
